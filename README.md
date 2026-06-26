@@ -15,7 +15,7 @@
 
 ## 📸 Ekran Görüntüleri
 
-Projeye ait ekran görüntülerini aşağıda bulabilirsiniz. Masaüstü ve mobil görünümler desteklenmektedir. İlgili resimleri `screenshots` klasörüne eklemeyi unutmayın!
+Projeye ait ekran görüntülerini aşağıda bulabilirsiniz. Masaüstü ve mobil görünümler desteklenmektedir.
 
 ### 🏠 Ana Sayfa & Keşfet
 <div align="center">
