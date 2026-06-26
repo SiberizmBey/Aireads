@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="./assets/aireads.png" alt="Aireads Logo" width="120" />
+  <img src="./assets/img/aireads.png" alt="Aireads Logo" width="120" />
   <h1>🚀 Aireads</h1>
   <p><strong>Modern, hızlı ve dinamik bir Threads klonu.</strong></p>
 
