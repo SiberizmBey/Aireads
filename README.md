@@ -55,11 +55,17 @@ Projeye ait ekran görüntülerini aşağıda bulabilirsiniz. Masaüstü ve mobi
 
 ## ✨ Özellikler
 
-- **Gerçek Zamanlı İletişim:** Socket.io ile anlık mesajlaşma ve bildirimler.
-- **Kullanıcı Kimlik Doğrulaması:** Güvenli giriş ve kayıt sistemi (Bcrypt).
-- **Medya Yükleme:** Multer destekli fotoğraf ve dosya paylaşımı.
-- **Responsive Tasarım:** Hem mobil hem de masaüstü cihazlar için mükemmel uyumluluk.
-- **Güçlü Veritabanı:** Esnek ve hızlı veri yönetimi.
+- **Gelişmiş Profil Yönetimi:** Kullanıcı arama (`/api/users/search`), takip etme/bırakma, takipçi ve takip edilen sayılarını görüntüleme.
+- **Dinamik Akış (Feed):** "Sana Özel" ve "Takip Ettiklerin" olmak üzere sekmeli gönderi akışı.
+- **Gerçek Zamanlı İletişim (Socket.io):** 
+  - Anlık Direct Message (DM) sistemi.
+  - Yeni takip, beğeni veya mesaj geldiğinde anlık bildirimler.
+- **Etkileşimli Gönderiler:** 
+  - Gönderi paylaşma, beğenme/beğenmekten vazgeçme ve zincirleme (thread) yanıtlar verebilme.
+  - Multer ile 5MB'a kadar resim yükleme desteği.
+- **Kullanıcı Kimlik Doğrulaması:** Giriş, kayıt, çıkış ve oturum yönetimi (Bcrypt ile şifreleme ve express-session).
+- **Veri Silme:** Kullanıcının hesabını sildiğinde `ON DELETE CASCADE` ile tüm verilerini (avatar, gönderiler, takipler, DM'ler, beğeniler) temizleyen SQLite altyapısı.
+
 
 ---
 
@@ -76,7 +82,7 @@ Projeyi yerel ortamınızda çalıştırmak için aşağıdaki adımları izleyi
 
 1. **Repoyu Klonlayın**
    ```bash
-   git clone https://github.com/kullaniciadi/aireads.git
+   git clone https://github.com/SiberizmBey/Aireads.git
    cd aireads
    ```
 
@@ -117,7 +123,7 @@ Bu proje aşağıdaki modern web teknolojileri kullanılarak geliştirilmiştir:
 - **Backend:** Node.js, Express.js
 - **Veritabanı:** SQLite / PostgreSQL (pg)
 - **Gerçek Zamanlı:** Socket.io
-- **Güvenlik & Oturum:** bcryptjs, express-session
+- **Kimlik Doğrulama & Oturum:** bcryptjs, express-session
 - **Dosya Yükleme:** Multer
 
 ---
